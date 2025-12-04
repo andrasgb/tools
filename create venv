@@ -1,0 +1,15 @@
+# Creaza mediul virtual
+cd ~/Documents/Encrypt-decrypt  # sau unde ai codul
+python3 -m venv venv_encryptor
+
+# 1️⃣ Activează mediul virtual
+source ~/Documents/Encrypt-decrypt/encryptor-venv/bin/activate
+
+pip install pyinstaller
+
+
+# 2️⃣ Du-te în directorul unde este scriptul
+cd ~/Documents/Encrypt-decrypt/encrypt-decrypt
+
+# 3️⃣ Compilează scriptul într-un executabil standalone
+pyinstaller --onefile --windowed crypt-decrypt.py
